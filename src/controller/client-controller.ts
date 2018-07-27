@@ -1,7 +1,7 @@
 import { route } from "@plumjs/core";
 import { val } from "@plumjs/plumier";
 
-import { inject } from "../ioc-container";
+import { inject } from "../../lib/ioc-container";
 import { ClientDto } from "../model/model";
 import { ClientRepository } from "../repository/repository";
 

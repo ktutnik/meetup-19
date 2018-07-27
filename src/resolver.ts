@@ -2,7 +2,7 @@ import { Class, DependencyResolver } from "@plumjs/core";
 
 import { ClientController } from "./controller/client-controller";
 import { ClientPetController } from "./controller/client-pet-controller";
-import { Container } from "./ioc-container";
+import { Container } from "../lib/ioc-container";
 import { ClientRepository, PetRepository } from "./repository/repository";
 
 

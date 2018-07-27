@@ -1,7 +1,7 @@
 import { ClientRepository } from "../src/repository/repository";
 import { ClientModel } from "../src/model/model";
-import { MongooseFacility } from "../node_modules/@plumjs/mongoose";
-import { PlumierApplication } from "../node_modules/@plumjs/core";
+import { MongooseFacility } from "@plumjs/mongoose";
+import { PlumierApplication } from "@plumjs/core";
 
 
 describe("Repository", () => {
