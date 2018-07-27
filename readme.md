@@ -1,5 +1,7 @@
 # Contoh Automated Unit Testing
 
+[![Build Status](https://travis-ci.org/ktutnik/meetup-19.svg?branch=master)](https://travis-ci.org/ktutnik/meetup-19)
+
 Repo ini adalah source code dari meetup BaliJS #19 slide bisa dilihat [di sini](https://swipe.to/5764hm)
 
 ## Permasalahan
@@ -90,6 +92,10 @@ Note: decease akan secara otomatis di konversi ke boolean karena kita menentukan
 ## Melihat hasil Test Coverage
 
 Coverage report bisa dilihat setelah `$ npm test` dijalankan hasilnya bisa dilihat di folder `coverage/lcov-report/index.html` jalankan di browser dan lihat kode-kode yang tidak tercover oleh testing.
+
+## Melihat hasil di server CI
+
+Aplikasi yang kita buat kita kondisikan untuk bisa berjalan di nodejs 8 dan nodejs stable, test dijalankan di server travis-ci, bisa dilihat [disini](https://travis-ci.org/ktutnik/meetup-19)
 
 ## Berkontribusi
 Contoh kode ini belum di test dengan benar, untuk teman-teman yang gagal mencoba atau ada yang mau di tanyakan silakan submit issue.
