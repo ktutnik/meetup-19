@@ -2,14 +2,14 @@
   "name": "balijs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "node src/index",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "tsc"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ketut Sandiarsa",
+  "license": "MIT",
   "dependencies": {
     "@plumjs/mongoose": "0.1.0-alpha.292e1ec3",
     "@plumjs/plumier": "0.1.0-alpha.292e1ec3",
@@ -17,6 +17,11 @@
   },
   "devDependencies": {
     "@types/jest": "^23.3.0",
-    "jest": "^23.4.1"
-  }
+    "jest": "^23.4.1",
+    "pre-push": "^0.1.1",
+    "typescript": "^2.9.2"
+  },
+  "pre-push": [
+    "test"
+  ]
 }

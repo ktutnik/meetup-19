@@ -18,7 +18,6 @@ export class ClientDto {
         @val.email()
         public email:string,
         @array(PetDto)
-        @val.optional()
         public pets: PetDto[]
     ){}
 }

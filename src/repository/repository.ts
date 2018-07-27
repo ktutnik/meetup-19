@@ -20,7 +20,7 @@ export class PetRepository{
         await pet.save()
     }
 
-    save(data:Partial<PetDto>){
+    save(data:PetDto){
         return new PetModel(data).save()
     }
 
@@ -32,11 +32,13 @@ export class PetRepository{
 
 export class ClientRepository{
     async all(){
+        //@plumier/mongoose bug #14
         await PetModel.findById("5b5905f081a4267a89b3c7bd")
         return ClientModel.find({}).populate("pets")
     }
 
     async get(id:string){
+        //@plumier/mongoose bug #14
         await PetModel.findById("5b5905f081a4267a89b3c7bd")
         const pet = await ClientModel.findById(id).populate("pets")
         if (!pet) throw new HttpStatusError(400, `No client found with id ${id}`)
